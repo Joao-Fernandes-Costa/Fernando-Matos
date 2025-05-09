@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dicas de Poupança - Finance Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Finance Hub</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="page1.html">Investimentos</a></li>
+                <li><a href="page2.html">Orçamento</a></li>
+                <li><a href="page3.html" class="active">Dicas de Poupança</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Dicas Inteligentes de Poupança</h2>
+            <p>Economizar dinheiro é essencial para a segurança financeira. Aqui estão algumas dicas práticas para ajudar você a poupar de forma eficaz.</p>
+            <img src="images/financeiro4.jpg" alt="Ilustração de dicas de poupança" class="hero-image" />
+            <p><strong>Importante:</strong> Automatize suas economias para construir patrimônio sem esforço.</p>
+            <p>Em 2025, a automação financeira e o uso de aplicativos para controle de gastos e investimentos são ferramentas indispensáveis para quem deseja poupar com eficiência. Além disso, cortar despesas desnecessárias e criar um fundo de emergência são passos fundamentais para manter a saúde financeira.</p>
+        </section>
+
+        <section class="highlights">
+            <article class="highlight">
+                <img src="images/Logo_S3_1.png" alt="Ícone de automação de poupança" />
+                <h3>Automatize a Poupança</h3>
+                <p>Configure transferências automáticas para sua conta poupança.</p>
+            </article>
+            <article class="highlight">
+                <img src="images/Logo_S3_2.png" alt="Ícone de corte de despesas" />
+                <h3>Reduza Despesas Desnecessárias</h3>
+                <p>Identifique e diminua gastos com itens não essenciais.</p>
+            </article>
+            <article class="highlight">
+                <img src="images/Logo_S3_3.png" alt="Ícone de fundo de emergência" />
+                <h3>Construa um Fundo de Emergência</h3>
+                <p>Guarde dinheiro para cobrir despesas inesperadas e emergências.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Finance Hub. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const highlights = document.querySelectorAll('.highlight');
+        window.addEventListener('scroll', () => {
+            highlights.forEach((highlight) => {
+                const rect = highlight.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    highlight.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

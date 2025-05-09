@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Orçamento - Finance Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Finance Hub</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="page1.html">Investimentos</a></li>
+                <li><a href="page2.html" class="active">Orçamento</a></li>
+                <li><a href="page3.html">Dicas de Poupança</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Orçamento Eficaz</h2>
+            <p>O orçamento ajuda você a controlar suas finanças e planejar o futuro. Aprenda a criar e seguir um orçamento.</p>
+            <img src="images/financeiro2.jpg" alt="Ilustração de orçamento" class="hero-image" />
+            <p><strong>Importante:</strong> Acompanhe suas despesas regularmente para evitar gastos excessivos.</p>
+            <p>Em 2025, a tecnologia oferece diversas ferramentas digitais para facilitar o controle do orçamento, como aplicativos de finanças pessoais que sincronizam com suas contas bancárias e cartões. Estabelecer metas financeiras claras e revisar seu orçamento mensalmente são práticas essenciais para manter a saúde financeira.</p>
+            <p>Além disso, reservar uma parte da renda para emergências e investimentos é fundamental para garantir estabilidade e crescimento financeiro.</p>
+        </section>
+
+        <section class="highlights">
+            <article class="highlight">
+                <img src="images/Logo_S2_1.png" alt="Ícone de controle de despesas" />
+                <h3>Controle de Despesas</h3>
+                <p>Mantenha um registro de todos os seus gastos para identificar áreas de economia.</p>
+            </article>
+            <article class="highlight">
+                <img src="images/Logo_S2_2.png" alt="Ícone de metas de poupança" />
+                <h3>Defina Metas</h3>
+                <p>Estabeleça metas financeiras claras para manter a motivação e o foco.</p>
+            </article>
+            <article class="highlight">
+                <img src="images/Logo_S2_3.png" alt="Ícone de planejamento orçamentário" />
+                <h3>Planeje com Antecedência</h3>
+                <p>Prepare-se para despesas futuras e emergências com um plano sólido.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Finance Hub. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const highlights = document.querySelectorAll('.highlight');
+        window.addEventListener('scroll', () => {
+            highlights.forEach((highlight) => {
+                const rect = highlight.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    highlight.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

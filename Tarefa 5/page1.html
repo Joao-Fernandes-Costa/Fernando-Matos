@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Investimentos - Finance Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Finance Hub</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="page1.html" class="active">Investimentos</a></li>
+                <li><a href="page2.html">Orçamento</a></li>
+                <li><a href="page3.html">Dicas de Poupança</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Fundamentos dos Investimentos</h2>
+            <p>Investir é uma maneira poderosa de aumentar seu patrimônio ao longo do tempo. Compreender os fundamentos pode ajudá-lo a tomar decisões informadas.</p>
+            <img src="images/financeiro3.jpg" alt="Ilustração de investimentos" class="hero-image" />
+            <p><strong>Importante:</strong> Diversifique seus investimentos para reduzir riscos.</p>
+            <p>Em 2025, as melhores formas de investir incluem uma combinação de estratégias tradicionais e inovadoras. É recomendável diversificar entre ações, fundos imobiliários, renda fixa e investimentos em tecnologia sustentável. Além disso, investir em educação financeira contínua e acompanhar as tendências do mercado são essenciais para maximizar os retornos.</p>
+            <p>Considere também o uso de plataformas digitais para facilitar o acesso a investimentos e a automação de aportes mensais para garantir disciplina financeira.</p>
+        </section>
+
+        <section class="highlights">
+            <article class="highlight">
+                <img src="images/logo_S1_1.png" alt="Ícone de ações" />
+                <h3>Ações</h3>
+                <p>Participações em empresas que podem valorizar ao longo do tempo.</p>
+            </article>
+            <article class="highlight">
+                <img src="images/logo_S1_2.png" alt="Ícone de títulos" />
+                <h3>Títulos</h3>
+                <p>Empréstimos para empresas ou governos com retorno fixo de juros.</p>
+            </article>
+            <article class="highlight">
+                <img src="images/logo_S1_3.png" alt="Ícone de imóveis" />
+                <h3>Fundos Imobiliários</h3>
+                <p>Investimento em propriedades para renda de aluguel ou valorização.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Finance Hub. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const highlights = document.querySelectorAll('.highlight');
+        window.addEventListener('scroll', () => {
+            highlights.forEach((highlight) => {
+                const rect = highlight.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    highlight.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
