@@ -48,7 +48,11 @@ h1 {
     height: auto;
     border-radius: 5px;
 }
-
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -105,8 +109,13 @@ button {
     flex-wrap: wrap;
     justify-content: center;
 }
+.rotero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .card_img:hover {
-    transform: scale(1.10);
+    transform: scale(1.05);
     box-shadow: 0 8px 40px rgba(0, 123, 255, 0.3);
 }
 .card_img {
